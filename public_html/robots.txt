@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /mail.php
+Disallow: /php/
+
+Sitemap: https://www.chacohorizon.com/sitemap.xml

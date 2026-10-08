@@ -1,0 +1,14 @@
+/* Product ticker with thumbnails (home + products). Separate file because the
+   Vite bundles are cached as immutable — bump the filename (v2, v3…) when editing. */
+.ticker-pics{padding:16px 0}
+.ticker-pics .tick-track{gap:0;animation-duration:75s}
+.ticker-pics:hover .tick-track{animation-play-state:paused}
+.ticker-pics .tick-track span.ti{gap:14px;padding:6px 22px 6px 6px;border:1px solid rgba(245,242,236,.16);border-radius:999px;background:rgba(245,242,236,.04);margin-right:22px}
+.ticker-pics .tick-track span.ti:after{display:none}
+.ticker-pics .ti img{width:56px;height:56px;border-radius:50%;object-fit:cover;flex:none;border:2px solid var(--tan);display:block}
+@media (max-width:700px){
+  .ticker-pics{padding:12px 0}
+  .ticker-pics .tick-track{gap:0;animation-duration:60s}
+  .ticker-pics .tick-track span.ti{gap:10px;padding:4px 16px 4px 4px;margin-right:14px}
+  .ticker-pics .ti img{width:42px;height:42px}
+}
